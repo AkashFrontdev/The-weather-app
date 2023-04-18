@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Weather app</title>
+    <link rel="shortcut icon" href="./The weather.webp" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="container">
+          <form class="form">
+            <input
+              class="form__input"
+              type="text"
+              placeholder="Search Location..."
+              required
+            />
+            <ul class="cities-list"></ul>
+          </form>
+        </div>
+      </section>
+
+      <section class="info">
+        <div class="container">
+          <h2 class="info__location">Vancouver, CA</h2>
+          <p class="info__date">Monday, April 26, 2021</p>
+
+          <h3 class="info__degree">16°C</h3>
+
+          <hr class="info__line" />
+
+          <h4 class="info__weather-name">Broken clouds</h4>
+          <p class="info__weather-between">Wind:</p>
+        </div>
+      </section>
+    </main>
+    <script src="./js/utils.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

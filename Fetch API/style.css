@@ -1,0 +1,168 @@
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Rubik", "Arial", sans-serif;
+  line-height: 1.5;
+  color: #333;
+  background: rgb(0,121,255);
+  background: linear-gradient(0deg, rgba(0,121,255,1) 0%, rgba(0,255,239,1) 100%);
+}
+
+.container {
+  max-width: 1000px;
+  padding: 0 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.form {
+  position: relative;
+  z-index: 0;
+  margin-top: 35px;
+  margin-bottom: 90px;
+  padding: 0;
+  width: 100%;
+}
+
+.form__input {
+  padding: 15px;
+  border: none;
+  outline: none;
+  width: 100%;
+  background: #FFFFFF;
+  box-shadow: 3px 4px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 10px;
+}
+
+.info {
+  text-align: center;
+}
+
+.info__location {
+  margin: 0;
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 55px;
+}
+
+.info__date {
+  margin: 0;
+  margin-bottom: 25px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.info__degree {
+  margin: 0;
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 75px;
+}
+
+.info__line {
+  display: inline-block;
+  margin: 15px auto;
+  width: 245px;
+  border: none;
+  border-bottom: 3px dashed #222;
+}
+
+.info__weather-name {
+  margin: 10px 0;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.info__weather-between {
+  margin: 0;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.cities-list {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  list-style-type: none;
+  position: absolute;
+  z-index: 0;
+  top: 100%;
+  width: 100%;
+}
+
+.cities-list li {
+  padding: 10px;
+  cursor: pointer;
+}
+.cities-list li:hover {
+  background-color: #efefef;
+}
+
+@media only screen and (max-width: 425px) {
+  .info__location {
+    margin: 0;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 45px;
+  }
+
+  .info__date {
+    margin: 0;
+    margin-bottom: 25px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+  }
+
+  .info__degree {
+    margin: 0;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 65px;
+  }
+
+  .info__weather-name {
+    margin: 5px 0;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+  }
+  
+  .info__weather-between {
+    margin: 0;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+
